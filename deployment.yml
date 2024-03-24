@@ -13,6 +13,8 @@ spec:
       labels:
         app: sample-app
     spec:
+      imagePullSecrets:
+      - name: mydockerhubsecret
       containers:
       - command:
         - /app/sample-app
