@@ -13,6 +13,8 @@ spec:
       labels:
         app: sample-app
     spec:
+      imagePullSecrets:
+      - name: my-docker-credentials
       containers:
         image: imranathumber/hello-web:latest
         name: sample-app
