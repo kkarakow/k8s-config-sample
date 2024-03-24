@@ -14,7 +14,7 @@ spec:
         app: sample-app
     spec:
       containers:
-        image: imranathumber/hello-web:latest
+      - image: imranathumber/hello-web:latest
         name: sample-app
         ports:
         - containerPort: 80
