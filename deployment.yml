@@ -13,14 +13,8 @@ spec:
       labels:
         app: sample-app
     spec:
-      imagePullSecrets:
-      - name: mydockerhubsecret
       containers:
-      - command:
-        - /app/sample-app
-        image: gitopsbook/sample-app:v0.1
+        image: imranathumber/hello-web:latest
         name: sample-app
         ports:
         - containerPort: 80
-
-
